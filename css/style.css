@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+    background-color: #0d0d10;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 100px;
+    background-color: #0d0d10;
+    border-bottom: 1px solid #272333;
+}
+
+.big-btn {
+    max-width: 200px;
+    width: fit-content;
+    padding: 0px 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.big-btn:hover {
+    background-color: #6c6f72;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Gaunter {
+    width: 1140px;
+    height: 640px;
+    background-image: url(../img/Gaunter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px auto 0px auto;
+}
+
+.no-mar {
+    margin: 0px;
+}
+
+.metareport {
+    color: white;
+    width: 1140px;
+    border-bottom: 2px solid #272333;
+}
+
+.tiers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 200px;
+}
+
+.tier {
+    width: 1140px;
+    height: 90px;
+}
+
+.tier:hover {
+    cursor: pointer;
+}
+
+.first {
+    background-image: url(../img/Gwent-Tier1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second {
+    background-image: url(../img/Gwent-Tier2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third {
+    background-image: url(../img/Gwent-Tier3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

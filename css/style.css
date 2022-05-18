@@ -40,7 +40,7 @@ body {
 .Gaunter {
     width: 1140px;
     height: 640px;
-    background-image: url(../img/Gaunter.jpg);
+    background-image: url(../img/Wanderers.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 30px auto 0px auto;
@@ -61,6 +61,7 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 200px;
+    min-height: 300px;
 }
 
 .tier {
@@ -88,4 +89,118 @@ body {
     background-image: url(../img/Gwent-Tier3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+button {
+    border: 0px;
+}
+
+.list {
+    transition: .5s; 
+    width: 99%;
+    height: 0;
+    background-color: #212529;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* background-image: url("/site/img/Tiers/meta31-knickers.jpg"); */
+    /* position: relative; */
+}
+
+.inner-margin {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+
+.inner-margin p {
+    height: 0px;
+    transition: .7s;
+    display: none;
+}
+
+.right-info {
+    height: 0px;
+    width: 700px;
+    transition: .3s;
+    display: none;
+    position: absolute;
+    left: 32%;
+    top: 20%;
+}
+
+.img {
+    background-image: url("../img/Tiers/meta31-knickers.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    width: 322px;
+    height: 0px;
+    transition: .3s;
+}
+
+.list {
+    height: 0px;
+    transition:.5s;
+    opacity: 0;
+    display:block;
+    left: 40%;
+}
+
+.active {
+    height: fit-content;
+    display:block;
+    opacity: 1;
+    height: 1156px;
+}
+.active .img {
+    height: 882px;
+}
+
+.active .inner-margin p {
+    height: fit-content;
+    display: block;
+}
+
+.active .right-info {
+    display: block;
+    height: 600px;
+}
+
+.tier-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+span {
+    transition: .3s;
+}
+
+
+span:hover{
+    color: white;
+    text-decoration: underline #fff;
+}
+
+
+.wide-card-t {
+    max-width: 1090px;
+    max-height: 148px;
+}
+
+.card-mini-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.second-card {
+    background-image: url(../img/Tiers/meta31-jacques.jpg);
+    /* background-size: cover; */
+    background-position: 0 10px;
+}
+
+.third-card {
+    background-image: url(../img/Tiers/meta31-nolydia.jpg);
 }

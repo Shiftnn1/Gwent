@@ -58,15 +58,30 @@ body {
         width: 100%;
         background-size: 100%;
         background-repeat: no-repeat;
-        transition: 1s;
-        opacity: 1;
+        transition: 1.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .item:hover {
         background-size: 110%;
-        background-position:top top;
+        background-position:none top;
+    }
+
+    .item:hover .bleach {
+        opacity: .1;
+    }
+
+    .bleach {
+        transition: .9s;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0;
     }
         .bc-1 {
             background-image: url(../img/meta/meta-snapshot-background-nilfgaard-gwent.jpg);
+            background-position: 0 -110px;
         }
 
         .bc-2 {
@@ -116,6 +131,10 @@ body {
     flex-wrap: wrap;
     margin-top: 30px;
 }
+
+    .team:hover .s-item {
+        cursor: pointer;
+    }
 
     .s-item {
         width: 20%;
